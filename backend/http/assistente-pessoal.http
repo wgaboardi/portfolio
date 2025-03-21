@@ -1,0 +1,11 @@
+POST https://it4pm.app.n8n.cloud/webhook-test/assistente-pessoal
+Content-Type: application/json
+
+{
+ "chatId": "123456789",
+ "mensagem": "Você trabalha com desenvolvimento de React?"
+}
+
+// servidores para publicar
+contabo.com 6,55 dolares
+fly.io

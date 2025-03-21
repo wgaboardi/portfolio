@@ -7,9 +7,9 @@ export default interface Projeto {
   nome: string;
   descricao: string;
   imagens: string[];
-  tipo: Tipo
-  nivel: Nivel
-  repositorio: string
+  tipo: Tipo;
+  nivel: Nivel;
+  repositorio: string;
   destaque: boolean;
   tecnologias: Tecnologia[];
 }

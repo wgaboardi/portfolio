@@ -92,5 +92,6 @@ Além de apresentar os projetos do desenvolvedor, a aplicação incorpora agente
 
 -   [Next.js](https://nextjs.org/docs)
 -   [NestJS](https://docs.nestjs.com/)
+-   [N8N] (https://https://n8n.io/)
 -   [Prisma](https://www.prisma.io/docs)
 -   [Supabase](https://supabase.com)

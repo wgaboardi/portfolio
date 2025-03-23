@@ -3,6 +3,8 @@
 
 **** conventionalcommits.org ****
 ***     https://github.com/alexandresanlim/Badges4-README.md-Profile ****
+*** github.com/abhisheknaiidu/awesome-github-profile-readme
+*** zzetao.github.io/awesome-github-profile ***
 # Titulo 1
 ## Titulo 2
 ### Titulo 3

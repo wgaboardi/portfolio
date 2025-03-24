@@ -8,7 +8,9 @@ const nextConfig: NextConfig = {
 				hostname: "**",
 			},
 		],
-    domains: ["https://raw.githubusercontent.com/"]
+    domains: ["https://raw.githubusercontent.com/", 
+			"https://github.com"
+		]
 	}
 }
 export default nextConfig

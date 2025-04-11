@@ -22,7 +22,6 @@ export default function useChat() {
 			setMensagens((msgs) => [...msgs, novaMensagem])
 
 			const resposta = await conversar(chatId, novaMensagem)
-      console.log ('respsota', resposta)
 
 			if (!resposta) return
 

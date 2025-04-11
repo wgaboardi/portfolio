@@ -17,6 +17,12 @@ export async function obterProjetos() {
     },
     get web() {
       return projetos.filter((projeto) => projeto.tipo === Tipo.WEB)
+    },
+    get projeto() {
+      return projetos.filter((projeto) => projeto.tipo === Tipo.PROJETO)
+    },
+    get publicacao() {
+      return projetos.filter((projeto) => projeto.tipo === Tipo.PUBLICACAO)
     }
   }
 }

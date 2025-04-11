@@ -10,13 +10,13 @@ export default function MiniCV() {
 				<div className="flex flex-col items-center md:items-start lg:items-center xl:items-start">
 					<span
 						className="
-                            bg-gradient-to-r from-red-500 via-white to-white
+                            bg-gradient-to-r from-blue-700 via-white to-white
                             text-transparent bg-clip-text text-2xl font-bold
                         "
 					>
 						Wellington Luiz Gaboardi
 					</span>
-					<span>Criador do IT4SM.ART e IT4PM.ART</span>
+					<span>Criador do Website IT4SM.ART voltado para o público de TIC.</span>
 				</div>
 				<p className="text-sm text-center md:text-left lg:text-center xl:text-left">
           Servidor Público Federal e Líder PMO. PMP certificado. Especialista em Governança de TI e Teleinformática/Redes de Computadores. 

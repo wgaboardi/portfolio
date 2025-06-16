@@ -26,7 +26,7 @@ export default function Projetos(props: ProjetosProps) {
 				}}
 				className="w-full"
 			>
-				<CarouselContent className="flex flex-col items-center">
+				<CarouselContent className="flex flex-row items-center">
 					{props.lista.map((projeto) => (
 						<CarouselItem
 							key={projeto.id}

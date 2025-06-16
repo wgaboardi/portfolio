@@ -5,7 +5,7 @@ import Principal from "@/components/landing/Principal"
 import Projetos from '@/components/projetos/Projetos'
 import { obterProjetos } from '@/functions/projetos'
 
-export const fetchCache = 'no-store';
+export const fetchCache = 'default-no-store';
 
 export default async function Home() {
 	const tecnologias = await obterTecnologias()

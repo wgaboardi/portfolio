@@ -23,72 +23,69 @@
 
 </div>
 
-O Portfolio é uma aplicação full stack que integra tecnologias populares do mercado para criar uma vitrine digital das habilidades e projetos de um desenvolvedor. Esta plataforma vai além da simples exibição de trabalhos anteriores, funcionando como uma demonstração prática das capacidades técnicas do profissional, evidenciando seu domínio em desenvolvimento web moderno.
+Portfolio is a full-stack application that brings together widely used technologies to showcase a developer’s skills and projects. More than a display of past work, it serves as a practical demonstration of the developer’s technical abilities and experience with modern web development.
+The application also includes AI agents with access to the developer’s résumé, GitHub repositories, and professional history. Through real-time chat, recruiters and potential clients can ask about specific technical skills and projects and receive detailed answers. These conversations make it easier to explore the developer’s experience and assess how it relates to their needs.
+## 🖥️ How to Run This Project
 
-Além de apresentar os projetos do desenvolvedor, a aplicação incorpora agentes de IA inteligentes que têm acesso completo ao currículo, repositórios do GitHub e histórico do profissional. Essa integração permite que recrutadores e potenciais clientes explorem, através de interações em tempo real via chat, aspectos específicos das competências técnicas do desenvolvedor. Os chats com os agentes oferecem insights valiosos, permitindo que visitantes façam perguntas e recebam informações detalhadas sobre as habilidades e experiências do profissional, tornando o processo de avaliação mais dinâmico e informativo.
+### Requirements
 
-## 🖥️ Como rodar este projeto 🖥️
+- Node.js installed
 
-### Requisitos:
+### Steps
 
--   Node.js instalado
+1. Clone the repository:
 
-### Execução:
+   ```sh
+   git clone https://github.com/wgaboardi/portfolio.git
+   ```
 
-1. Clone este repositório:
+2. Open the project directory:
 
-    ```sh
-    git clone https://github.com/wgaboardi/portfolio.git
-    ```
+   ```sh
+   cd portfolio
+   ```
 
-2. Acesse o diretório do projeto:
+3. Sign in to [Supabase](https://supabase.com), or create an account.
 
-    ```sh
-    cd portfolio
-    ```
+4. Open your Supabase project and click **Connect**.
 
-3. Acesse sua conta no [Supabase](https://supabase.com) ou crie uma nova conta.
+5. Select **ORM**, then choose **Prisma**.
 
-4. Navegue até o projeto no Supabase e clique no botão `connect`.
-   
-5. Clique em selecionar ORM e selecione o ORM Prisma.
-   
-6. Copie as variáveis de ambiente listadas, crie um arquivo `.env` na pasta backend e preencha com as seguintes informações:
-    ```
-    DATABASE_URL=
-    DIRECT_URL=
-    PORT=
-    ```
-    **Obs: Caso o valor da porta não seja adicionado, a aplicação rodará por padrão na porta 4000**
+6. Copy the environment variables provided by Supabase. Create a `.env` file in the `backend` directory:
 
-7. Crie uma conta no site no [n8n](https://n8n.io), e importe o fluxo definido no arquivo assistente-pessoal que está na pasta assets.
+   ```env
+   DATABASE_URL=
+   DIRECT_URL=
+   PORT=
+   ```
 
-8. Após importar o fluxo, clique no primeiro nó, acesse `webhooks url`, clique em `Production URL` e copie o valor dessa URL.
-**Obs: Lembre-se de ativar o workflow no n8n**
+   If `PORT` is not set, the backend runs on port `4000` by default.
 
-9. Crie um arquivo `.env` na pasta web e preencha com as seguintes informações, sendo que a URL da API é a URL do backend e a segunda variável deve ter como valor a URL que extraimos no n8n:
+7. Create an account at [n8n](https://n8n.io) and import the `assistente-pessoal` workflow from the `assets` directory.
 
-    ```
-    NEXT_PUBLIC_API_URL=
-    NEXT_PUBLIC_CHAT_WEBHOOK=
-    ```
+8. Open the first node of the imported workflow. Under **Webhook URLs**, select **Production URL** and copy the URL. Activate the workflow in n8n.
 
-10. Instale as dependências dos projetos `web` e `backend` com o comando `npm i` em cada uma das pastas
+9. Create a `.env` file in the `web` directory. Set the API URL to your backend URL and the chat webhook to the production URL copied from n8n:
 
-11. Abra as pastas `web` e `backend` em dois terminais diferentes e rode o comando `npm run dev` em cada um dos terminais para executar o projeto. 
+   ```env
+   NEXT_PUBLIC_API_URL=
+   NEXT_PUBLIC_CHAT_WEBHOOK=
+   ```
 
-## 🗒️ Features do projeto 🗒️
+10. Run `npm i` in both the `web` and `backend` directories to install their dependencies.
 
--   Exibição de Projetos
--   Integração com Agentes de IA via Chat
--   Repositórios GitHub Integrados
--   Lista de tecnologias destacadas
--   Lista de tecnologias dos projetos
--   Buscar os projetos por Id com as tecnologias associadas
+11. Open `web` and `backend` in separate terminals. Run `npm run dev` in each terminal to start the project.
 
-![](./.gitassets/2.png)   
+## 🗒️ Project Features
 
-## 💎 Links úteis 💎
+- Project showcase
+- Chat integration with AI agents
+- Integrated GitHub repositories
+- Featured technologies
+- Technologies used in each project
+- Project lookup by ID, including associated technologies
+
+## 💎 Links 💎
 
 -   [Next.js](https://nextjs.org/docs)
 -   [NestJS](https://docs.nestjs.com/)
